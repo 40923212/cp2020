@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='分組網站.html'>分組網站</a><li><a href='1.html'>1</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='puter Cases 電腦.html'>puter Cases 電腦</a><li class='has-children'><a href='Motherboards and Processors 主機板和處理器.html'>Motherboards and Processors 主機板和處理器</a><ul class='dropdown'><li><a href='構成因素.html'>構成因素</a></li></ul><li><a href='IO Ports  IO端口.html'>IO Ports  IO端口</a><li><a href='Power Supplies 電源.html'>Power Supplies 電源</a><li><a href='Dual Voltage雙電壓.html'>Dual Voltage雙電壓</a><li><a href='Power Supply Connectors 電源連接器.html'>Power Supply Connectors 電源連接器</a><li><a href='Remove A Power Supply 卸下電源.html'>Remove A Power Supply 卸下電源</a><li><a href='Replace A Power Supply 更換電源.html'>Replace A Power Supply 更換電源</a><li><a href='Test a Power Supply 測試電源.html'>Test a Power Supply 測試電源</a></li></ul><li><a href='HW2.html'>HW2</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='練習7 Exercise 7.html'>練習7 Exercise 7</a><li><a href='練習22 Exercise 22.html'>練習22 Exercise 22</a><li><a href='練習26 Exercise 26.html'>練習26 Exercise 26</a></li></ul><li><a href='kaggle.html'>kaggle</a></li>
+                     <li><a href='分組網站.html'>分組網站</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='puter Cases 電腦.html'>puter Cases 電腦</a><li class='has-children'><a href='Motherboards and Processors 主機板和處理器.html'>Motherboards and Processors 主機板和處理器</a><ul class='dropdown'><li><a href='構成因素.html'>構成因素</a></li></ul><li><a href='IO Ports  IO端口.html'>IO Ports  IO端口</a><li><a href='Power Supplies 電源.html'>Power Supplies 電源</a><li><a href='Dual Voltage雙電壓.html'>Dual Voltage雙電壓</a><li><a href='Power Supply Connectors 電源連接器.html'>Power Supply Connectors 電源連接器</a><li><a href='Remove A Power Supply 卸下電源.html'>Remove A Power Supply 卸下電源</a><li><a href='Replace A Power Supply 更換電源.html'>Replace A Power Supply 更換電源</a><li><a href='Test a Power Supply 測試電源.html'>Test a Power Supply 測試電源</a></li></ul><li><a href='HW2.html'>HW2</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='練習7 Exercise 7.html'>練習7 Exercise 7</a><li><a href='練習22 Exercise 22.html'>練習22 Exercise 22</a><li><a href='練習26 Exercise 26.html'>練習26 Exercise 26</a></li></ul><li><a href='kaggle.html'>kaggle</a></li>
                       </ul>
                 </nav>
               </div>
@@ -134,8 +134,41 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Test a Power Supply 測試電源 << <a href='Test a Power Supply 測試電源.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3<br /><h1>HW2</h1>
-<p lang=""><span></span></p>
-<br />Test a Power Supply 測試電源 << <a href='Test a Power Supply 測試電源.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
+<p lang=""><span>亂數分組:</span></p>
+<p lang=""><span>從網站上抓取班級名單</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(target_url):
+cp1b.append(int(line.decode('utf-8').rstrip())) 
+print(cp1b)</pre>
+<p><span>&gt;&gt;</span><span>&gt;[40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]</span></p>
+<p lang=""><span>from random import shuffle #random(亂數) #shuffle</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">list = [40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]
+shuffle(list)
+n = 5
+m = int(len(list)/n)
+list2 = []
+for i in range(0, len(list),m):
+list2.append(list[i:i+m])
+print(list2)</pre>
+<p><span>&gt;&gt;&gt;[[40923211, 40923242, 40923239, 40923250, 40923253, 40923210, 40923226, 40923240, 40923243, 40923225, 40923219], [40923218, 40923251, 40523148, 40923208, 40923214, 40923213, 40923207, 40523138, 40923224, 40823152, 40923232], [40923249, 40923234, 40923252, 40923245, 40923221, 40923203, 40923220, 40923205, 40923206, 40923238, 40923212], [40923228, 40923209, 40923204, 40923231, 40923216, 40823148, 40923244, 40923233, 40923246, 40923237, 40923230], [40923202, 40923223, 40923236, 40923247, 40923229, 40923201, 40728238, 40723217, 40923217, 40923227, 40923241], [40923248, 40923235]]<br/></span></p>
+<p><span>試做整合</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(target_url):
+cp1b.append(int(line.decode('utf-8').rstrip()))
+from random import shuffle
+shuffle(cp1b)
+n = 5
+m = int(len(cp1b)/n)
+list2 = []
+for i in range(0,len(cp1b),m):
+list2.append(cp1b[i:i+m])
+print(list2)</pre>
+<p><span>&gt;&gt;</span><span><span>&gt;</span></span><span>[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]</span></p>
+<p lang=""><span></span>kaggle:<a href="https://www.kaggle.com/huracan6101/cp2020w8-hw2/">https://www.kaggle.com/huracan6101/cp2020w8-hw2/</a></p><br />Test a Power Supply 測試電源 << <a href='Test a Power Supply 測試電源.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
         
     <!-- footer -->
       <div class="container">
