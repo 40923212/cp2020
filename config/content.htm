@@ -74,7 +74,7 @@
 <p lang=""><span><img alt="" height="295" src="/images/image15.png" width="341"/></span></p>
 <p lang=""><span></span></p>
 <h1>HW2</h1>
-<p lang=""><span>亂數分組:</span></p>
+<p lang=""><span style="color: #ff0000;">亂數分組:</span></p>
 <p lang=""><span>從網站上抓取班級名單</span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
 target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
@@ -113,9 +113,9 @@ print(list2)</pre>
 <p><span>請各組採分工方式, 以英文及中文對照方式完成 </span><a href="https://www.practicepython.org/">https://www.practicepython.org/</a><span><span> </span>中各題目的練習與資料整理, 請將圖文資料放入各分組組長的分組網頁中 (cp2020ag1 為甲班第一組倉儲名稱, 其餘類推), 並將分組網站連結回報至<span> </span></span><a href="https://gitter.im/mdecourse/cp2020">https://gitter.im/mdecourse/cp2020</a></p>
 <p><img alt="" height="168" src="/images/333.png" width="150"/></p>
 <h2>練習7 Exercise 7</h2>
-<p>清單理解 List Comprehensions</p>
+<p><span style="color: #ff0000;">清單理解 List Comprehensions</span></p>
 <p>假設我給您一個保存在變量中的列表：a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]。編寫一行Python來獲取此列表，a並創建一個僅包含該列表偶數元素的新列表。<br/>Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.</p>
-<p>討論區 Discussion<br/>本週的概念 Concepts for this week:</p>
+<p><span style="color: #0000ff;">討論區 Discussion</span><br/>本週的概念 Concepts for this week:</p>
 <p>清單理解 List comprehensions</p>
 <p>清單理解 List comprehensions<br/>列表理解的思想是使代碼更緊湊，以完成涉及列表的任務。以下面的代碼為例 The idea of a list comprehension is to make code more compact to accomplish tasks involving lists. Take for example this code:</p>
 <div class="line number1 index0 alt2">
@@ -133,13 +133,15 @@ ages = [2014 - year for year in years_of_birth]</pre>
 <p>它完成了與第一個代碼示例相同的操作-最後，該ages變量具有一個包含的列表[24, 23, 24, 24, 22, 23]，該列表對應於所有生日的年齡。<br/>It accomplishes the same thing as the first code sample - at the end, the ages variable has a list containing [24, 23, 24, 24, 22, 23], the ages corresponding to all the birthdates.</p>
 <p>列表理解的思想是壓縮for循環，並將列表追加到一條簡單的行中。請注意，for循環剛剛移到列表理解的末尾，而for關鍵字之前的部分是要附加到新列表末尾的東西。<br/>The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the for keyword is the thing to append to the end of the new list.</p>
 <p>您還可以將if語句嵌入到列表理解中-請查閱此參考資料以幫助您。有許多例子和比我能提供的更好的解釋。<br/>You can also embed if statements into the list comprehension - check out this reference to help you out. There are many examples and a better explanation than I can ever give.</p>
+<span></span>
+<p><span></span></p>
 <h2>練習22 Exercise 22</h2>
-<p>從文件讀取 Read From File</p>
+<p><span style="color: #ff0000;">從文件讀取 Read From File</span></p>
 <p>給定一個.txt包含一堆名稱列表的文件，請計算該文件中每個名稱的數量，然後將結果打印到屏幕上。.txt如果您想使用它，我有一個文件供您使用！</p>
 <p>Given a .txt file that has a list of a bunch of names, count how many of each name there are in the file, and print out the results to the screen. I have a .txt file for you, if you want to use it!</p>
 <p>額外 Extra:</p>
 <p>不要使用.txt上面的文件（或者，如果您想挑戰，也可以使用該.txt文件），請使用此文件，併計算每個圖像的每個“類別”有多少個。該文本文件實際上是與SUN數據庫場景識別數據庫相對應的文件的列表，並且列出了圖像的文件目錄層次結構。一旦查看了文件的第一行或第二行，就很清楚哪一部分代表場景類別。為此，您將需要記住一些有關Python 3中的字符串解析的信息。我在本文中對此進行了一些討論。<br/>Instead of using the .txt file from above (or instead of, if you want the challenge), take this .txt file, and count how many of each “category” of each image there are. This text file is actually a list of files corresponding to the SUN database scene recognition database, and lists the file directory hierarchy for the images. Once you take a look at the first line or two of the file, it will be clear which part represents the scene category. To do this, you’re going to have to remember a bit about string parsing in Python 3. I talked a little bit about it in this post.</p>
-<p>討論區 Discussion</p>
+<p><span style="color: #0000ff;">討論區 Discussion</span></p>
 <p>主題 Topics:</p>
 <p>1.讀取文件 Reading a file<br/>2.辭典 Dictionaries</p>
 <p>讀取文件 Reading a File</p>
@@ -160,7 +162,7 @@ print(line)
 line = open_file.readline()
 </pre>
 <p>而不是print(line)，您可以想像對文本行進行任何操作...如果將其保存到變量中，則可以有一個字符串，然後可以使用諸如.strip()或.split()with之類的東西。<br/>Instead of print(line), you can imagine doing anything you want to the line of text… If you save it to a variable, you have a string that you can then use something like .strip() or .split() with.</p>
-<p>辭典 Dictionaries<br/>字典是Python將兩種數據關聯在一起的方式。在官方文件說明了一切。<br/>Dictionaries are Python’s way of associating two pieces of data together. The official documentation says it all.</p>
+<p><span style="color: #008000;">辭典 Dictionaries</span><br/>字典是Python將兩種數據關聯在一起的方式。在官方文件說明了一切。<br/>Dictionaries are Python’s way of associating two pieces of data together. The official documentation says it all.</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">student_scores = {'Adama': 100, 'Starbuck': 75, 'Apollo': 80, 'Athena': 85, 'Agathon': 90}</pre>
 <p></p>
 <span>字符串（或:符號左側發生的任何事情）稱為keys。當我想訪問values（:符號右邊的東西）時，我需要向字典查詢與該鍵關聯的值：</span><br/><span>The strings (or whatever happens to the left of the : sign), are called keys. When I want to access the values (the things to the right of the : sign), I need to ask the dictionary for the value associated with the key:</span></div>
@@ -184,7 +186,7 @@ print(pair)</pre>
 <p>由於字典沒有順序，因此遍歷字典不能保證鍵/值對以特定順序出現。所以要小心<br/>Because dictionaries are not ordered, looping through them does not guarantee the key / value pairs coming out in a particular order. So be careful.</p>
 <p></p>
 <h2>練習26 Exercise 26</h2>
-<p>檢查井字遊戲 Check Tic Tac Toe</p>
+<p><span style="color: #ff0000;">檢查井字遊戲 Check Tic Tac Toe</span></p>
 <p>此練習是Tic Tac Toe練習系列4的第2部分。其他練習是：第1部分，第3部分和第4部分。<br/>This exercise is Part 2 of 4 of the Tic Tac Toe exercise series. The other exercises are: Part 1, Part 3, and Part 4.</p>
 <p>您可能已經猜到了，我們正在努力建立完整的井字遊戲板。但是，這遠遠超過了半個小時的編碼，因此我們要分批進行。<br/>As you may have guessed, we are trying to build up to a full tic-tac-toe board. However, this is significantly more than half an hour of coding, so we’re doing it in pieces.</p>
 <p>今天，我們將只關注檢查某人是否贏得了井字遊戲，而不必擔心這些動作是如何進行的。<br/>Today, we will simply focus on checking whether someone has WON a game of Tic Tac Toe, not worrying about how the moves were made.</p>
